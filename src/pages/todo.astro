@@ -1,0 +1,24 @@
+---
+const pageTitle = "Injecting JS"
+const toDo = 
+    [{goal:"learnAstro", state:"incomplete"},
+    {goal:"learnNetlifyServerless", state:"incomplete"},
+    {goal:"variableFont", state:"complete"}]
+ 
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+            <ul>
+                {toDo.map(item => {
+                   return  (item.state === "complete" && <li>Complete:{item.goal}</li>) || <li>incomplete:{item.goal}</li>
+                })}
+            </ul>
+        </body>
+</html>
