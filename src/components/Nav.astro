@@ -1,4 +1,8 @@
-<nav>
+---
+const { class:className } = Astro.props;
+import "../styles/global.css";
+---
+<nav class= {className}>
 <ul>
     <li><a href="/" target="_blank" rel="noreferer noopener">Home</a></li>
     <li><a href="/about" target="_blank" rel="noreferer noopener">About</a></li>

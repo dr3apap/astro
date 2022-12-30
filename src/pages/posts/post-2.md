@@ -1,12 +1,13 @@
 ---
+layout: ../../layouts/MarkDownPostLayouts.astro
 title: "Second post"
-postDate: 2022-12-28
+pubDate: 2022-12-28
 description: "Learning how to use markup"
-author: "Dr3"
+author: Dr3
 image:
     url: "https://astro.build/assets/blog/astro-1-release-update/cocver.jpeg"
     alt: "The astro logo with the word one"
-tags: ["astro", "blogging", "learning in public"]
+tags: ["post2"]
 ---
 
 # Learning is alwways fun
